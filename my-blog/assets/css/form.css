@@ -1,86 +1,77 @@
-* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header, footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-h1 {
-    margin: 0;
-}
-
-.main-content {
-    padding: 1rem;
-}
-
-.mode-toggle {
-    float: right;
-}
-
-.back-button {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Light Mode */
-.light-mode {
-    background-color: #fff;
-    color: #333;
-}
-
-/* Dark Mode */
-.dark-mode {
-    background-color: #333;
-    color: #fff;
-}
-
-/* Form Styles */
+/* Form container styles */
 form {
     max-width: 600px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
     background-color: #f9f9f9;
-    border-radius: 5px;
 }
 
+/* Form label styles */
 label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
+/* Form input styles */
 input[type="text"],
 textarea {
     width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 5px;
 }
 
-button {
-    padding: 0.5rem 1rem;
-    background-color: #333;
+/* Form submit button styles */
+button[type="submit"] {
+    background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    padding: 10px 20px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-/* Blog Post Styles */
-.blog-post {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background-color: #f9f9f9;
     border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Error message styles */
+.error {
+    color: red;
+    margin-top: 5px;
+}
+/* Form container styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative; /* Ensure positioning of image spot */
+}
+
+/* Image spot container */
+.image-spot {
+    position: absolute;
+    top: 200px; /* Adjust as needed */
+    right: 1200px; /* Adjust as needed */
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+}
+
+/* Image spot styles */
+.image-spot img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover; /* Ensure the image covers the entire spot */
+    border-radius: 50%; /* To make the image circular */
+    border: 2px solid #fff; /* Optional: Add border for contrast */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Add shadow effect */
 }

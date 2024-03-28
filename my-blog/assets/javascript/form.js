@@ -1,27 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const blogForm = document.getElementById('blogForm');
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('blog-form');
 
-    blogForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const username = blogForm.querySelector('#username').value;
-        const title = blogForm.querySelector('#title').value;
-        const content = blogForm.querySelector('#content').value;
+  form.addEventListener('submit', function (event) {
+      event.preventDefault();
 
-        if (username && title && content) {
-            const post = {
-                username: username,
-                title: title,
-                content: content
-            };
-            
-            let posts = JSON.parse(localStorage.getItem('posts')) || [];
-            posts.push(post);
-            localStorage.setItem('posts', JSON.stringify(posts));
+      const username = document.getElementById('username').value;
+      const title = document.getElementById('title').value;
+      const content = document.getElementById('content').value;
 
-            window.location.href = 'blog.html';
-        } else {
-            alert('Please complete all fields');
-        }
-    });
+      if (username && title && content) {
+          const postData = {
+              username: username,
+              title: title,
+              content: content
+          };
+
+          // Get existing posts from localStorage or initialize an empty array
+          const posts = JSON.parse(localStorage.getItem('posts')) || [];
+
+          // Add new post data to the array
+          posts.push(postData);
+
+          // Save updated posts array to localStorage
+          localStorage.setItem('posts', JSON.stringify(posts));
+
+          // Redirect to the posts page
+          window.location.href = 'blog.html';
+      } else {
+          alert('Please complete all fields');
+      }
+  });
 });

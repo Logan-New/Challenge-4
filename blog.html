@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog Posts</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>My Blog - Posts</title>
+    <link rel="stylesheet" href="my-blog/assets/css/blog.css">
 </head>
 <body>
+    <!-- Posts Page Content -->
     <header>
-        <h1>My Blog Posts</h1>
-        <div class="mode-toggle">
-            <label for="modeToggle">Toggle Mode:</label>
-            <input type="checkbox" id="modeToggle">
-        </div>
-        <a href="index.html" class="back-button">Back</a>
+        <button id="back-btn">Back</button>
+        <label class="switch">
+            <input type="checkbox" id="mode-toggle">
+            <span class="slider"></span>
+        </label>
     </header>
-    <main id="blogPosts">
+
+    <main id="posts-container">
         <!-- Blog posts will be dynamically inserted here -->
     </main>
+
     <footer>
         <a href="#">Developer's Portfolio</a>
     </footer>
-    <script src="javascript/blog.js" defer></script>
+
+    <script src="my-blog/assets/javascript/blog.js"></script>
 </body>
 </html>
