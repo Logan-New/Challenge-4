@@ -1,1 +1,1 @@
-# Challenge-4
+For this activity i was tasked with creating a blog post for website that allows for multiple post and allows for for the blog post to be added to a seprerate page. This code uses javascript,css,and html to accomplish this problem. This website allows you to add the blog title,blog author, and a description of the blog. It also features a dark and light mode and has a link to the developers Portfolio.
