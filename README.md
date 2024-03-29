@@ -53,4 +53,4 @@ Clone the repository and open the `index.html` file in a web browser to use the 
 
 ## Developer
 
-[Developer Name](https://portfolio-link.com)
+[Developer Name](https://github.com/Logan-New)
